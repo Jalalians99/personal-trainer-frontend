@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="./vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="/personal-trainer-frontend/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal Trainer App</title>
     <style>
@@ -18,6 +18,18 @@
         height: 100%;
       }
     </style>
+    <!-- GitHub Pages SPA routing -->
+    <script type="text/javascript">
+      // Redirect for SPA GitHub Pages routing with HashRouter
+      (function() {
+        // Only redirect if we're not using the HashRouter format already
+        if (window.location.pathname !== '/personal-trainer-frontend/' && 
+            window.location.pathname !== '/personal-trainer-frontend/index.html' &&
+            !window.location.hash) {
+          window.location.replace('/personal-trainer-frontend/#' + window.location.pathname.replace('/personal-trainer-frontend', ''));
+        }
+      })();
+    </script>
     <script type="module" crossorigin src="/personal-trainer-frontend/assets/index-1t0SnnLr.js"></script>
     <link rel="stylesheet" crossorigin href="/personal-trainer-frontend/assets/index-CRD7SDQF.css">
   </head>
